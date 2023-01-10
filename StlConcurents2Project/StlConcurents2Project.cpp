@@ -50,7 +50,9 @@ int main()
     th1.join();
     */
 
-    future<int> res1 = async(Counter, 100);
+    future<int> res1;
+    
+    res1 = async(Counter, 100);
     auto res2 = async(Counter, 50);
 
     //res1.wait();
